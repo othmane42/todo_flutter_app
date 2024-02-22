@@ -1,10 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'dart:async';
-import 'package:todo/models/item.dart';
-import 'package:todo/services/databaseClient.dart';
 import 'package:todo/screens/home_page.dart';
-
 
 
 void main() {

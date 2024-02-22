@@ -22,7 +22,7 @@ class DatabaseClient {
 
   Future _onCreate(Database db, int version) async {
     await db.execute(
-        "CREATE TABLE IF NOT EXISTS item (id INTEGER PRIMARY KEY, nom TEXT)");
+        "CREATE TABLE IF NOT EXISTS item (id INTEGER PRIMARY KEY AUTOINCREMENT, nom TEXT)");
     print("database created!");
     await db.insert("item", {'nom': 'tache1'});
   }
